@@ -25,19 +25,19 @@
             padding: 0.1rem 2.5rem;
         }
         header nav > p {
-            font-weight: 500;
+            font-weight: 500; /** text-decorator ou text-transform pra usar h1 **/
         }
         header nav ul{
             padding: 0;
             margin: 0;
+            width: 10rem;
             font-size: 14px;
             list-style: none;
             display: flex;
             justify-content: space-between;
         }
         header nav ul > li {
-            padding: 0.2rem; /** a bit more space to click **/
-            /** margin-right: 1.5rem; /** refactor to make ul use justify-content **/
+            padding: 0.5rem;
         }
         .intro{
             margin-top: 6rem;
@@ -62,7 +62,13 @@
             border: none;
             border-radius: 8px;
             box-shadow: 0 6px 8px 0 rgba(0,0,0,0.25);
+            animation: pulse 1s ease infinite;
         }
+        @keyframes pulse { 
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+}
     </style>
 </head>
 <body>
